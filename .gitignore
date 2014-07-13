@@ -1,6 +1,8 @@
 # Compiled Object files
 *.slo
 *.lo
+*.log
+*.tlog
 *.o
 *.obj
 
@@ -40,6 +42,12 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+# Visual Studio
+# =========================
+*.opensdf
+*.sdf
+*.suo
 
 # Windows
 # =========================
