@@ -48,6 +48,9 @@ Icon
 *.opensdf
 *.sdf
 *.suo
+*.idb
+*.ilk
+*.pdb
 
 # Windows
 # =========================
