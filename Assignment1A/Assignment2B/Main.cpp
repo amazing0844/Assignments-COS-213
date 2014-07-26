@@ -68,7 +68,6 @@ int main()
 		}
 	}
 
-	PauseAtEnd();
 	return 0;
 }
 
@@ -98,7 +97,7 @@ void GetScore(int &score)
 // is not within the correct bounds an error is displayed.
 void PrintScore(int score)
 {
-	if (score > 0 && score < arraySize)
+	if (score >= 0 && score < arraySize)
 	{
 		cout << score << " gets a grade of " << grades[score] << endl;
 		return;
@@ -112,7 +111,7 @@ void BuildGradeArray()
 {
 	for (int i = 0; i < arraySize; i++)
 	{
-		if (i < 59) {
+		if (i < 60) {
 			grades[i] = 'F';
 		}
 		else if (i < 70) {
@@ -130,12 +129,3 @@ void BuildGradeArray()
 	}
 }
 
-// Helper function to encapsulate the pause at the end of the application run.
-void PauseAtEnd()
-{
-	char endChar;
-
-	cout << "\n\nPress any key and then enter to exit... ";
-	cin >> endChar;
-	return;
-}
