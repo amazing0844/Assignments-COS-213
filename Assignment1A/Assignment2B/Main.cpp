@@ -36,14 +36,11 @@ void BuildGradeArray();
 
 // Prompts a user for a grade and assigns it to the passed in integer reference.
 // It will then display the entered number before returning.
-void GetScore(int &);
+void getScore(int &);
 
 // Takes in an integer score and prints the corresponding letter grade. If the grade
 // is not within the correct bounds an error is displayed.
-void PrintScore(int);
-
-// Helper function to encapsulate the pause at the end of the application run.
-void PauseAtEnd();
+void printGrade(int);
 
 // Program execution method
 int main()
@@ -59,12 +56,12 @@ int main()
 
 	while (enteredGrade != -999)
 	{
-		GetScore(enteredGrade);
+		getScore(enteredGrade);
 
 		if (enteredGrade != -999)
 		{
 			// Display the grade as a string (e.g. Grade A)
-			PrintScore(enteredGrade);
+			printGrade(enteredGrade);
 		}
 	}
 
@@ -83,7 +80,7 @@ void Introduction()
 
 // Prompts a user for a grade and assigns it to the passed in integer reference
 // It will then display the entered number before returning.
-void GetScore(int &score)
+void getScore(int &score)
 {
 	cout << "\nPlease enter a grade from 0 to 100. (-999 to exit): ";
 	cin >> score;
@@ -95,7 +92,7 @@ void GetScore(int &score)
 
 // Takes in an integer score and prints the corresponding letter grade. If the grade
 // is not within the correct bounds an error is displayed.
-void PrintScore(int score)
+void printGrade(int score)
 {
 	if (score >= 0 && score < arraySize)
 	{
