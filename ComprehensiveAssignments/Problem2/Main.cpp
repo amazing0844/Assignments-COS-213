@@ -6,7 +6,7 @@
 // Course Code:				COS-213-GS007
 // Course Name:				C++ Programming
 //
-// Comprehensive  1A (Question 2)
+// Comprehensive Assignment(Question 2)
 //	Create a program that takes the scores as input and provides as output the management decision. In the 
 //	program, include 2 void functions titled getScore and printDecision, each with an int argument.
 //

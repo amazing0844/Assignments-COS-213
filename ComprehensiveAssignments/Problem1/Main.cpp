@@ -6,7 +6,7 @@
 // Course Code:				COS-213-GS007
 // Course Name:				C++ Programming
 //
-// Comprehensive  1A (Question 1)
+// Comprehensive Assignment (Question 1)
 //	Create a program to determine the largest number out of 15 numbers
 //	entered(numbers entered one at a time).This should be done in a
 //	function using this prototype:
