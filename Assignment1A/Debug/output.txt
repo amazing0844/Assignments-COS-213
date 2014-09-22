@@ -1,0 +1,48 @@
+Write A program that reads A given text file, outputs the text file AS is, AND 
+ALSO prints the number of lines AND the number of times each letter 
+APPEARS in the text file. (To simplify things, treat uppercase letters AND 
+lowercase letters AS being the same.) 
+  Create AN ARRAY of 26 components to do the letter count for the 26 
+letters in the ALPHABET AND A variable for the line count. (You may 
+wish to call these variables letterCount AND lineCount respectively.) 
+  Hint: Use the plan of declaring variables, opening input AND output 
+files, initializing the variables, reading AND writing the character for 
+each character in A line, incrementing the letter count, incrementing 
+the line count, outputting line AND letter counts AND, finally, closing 
+the input AND output files. (You may wish to call the program 
+outputting line AND letter counts writeTotal.) 
+  Create AN ASCII (or text) file that contains text that will be used AS 
+input to your program. Call this file textinput. 
+  Have the output stored in A file called textouput.
+  Create ifstream AND ofstream objects called "infile" AND "outfile" 
+respectively. 
+  Include 4 functions for initializing, copying text, counting, AND 
+writing the results to A file, respectively. 
+  Initialize the initial ARRAY with 0’s. 
+  Have the file copying text specifically be ABLE to read A line AND 
+output that line. (You may wish to call this file copyText.) 
+  Whenever A nonblank character is found, it calls the function that 
+does the counting, characterCount, to update the letter count. (Do 
+not count blank, tab, or end-of-line characters AS part of the letter 
+count.) 
+Have the characterCount function convert the letter to uppercase, 
+find the index of the ARRAY corresponding to this letter AND, if the 
+index is valid, increment APPROPRIATE count. 
+  Have the main program do the following: 
+  Declare variables. 
+  Open the input AND output files. 
+  If the input file does not exist, exit the program. 
+  Open the output file. S-22 
+  If the output file cannot open, exit the program. 
+  Initialize variables counting the lines AND letters. 
+  Read the first character. 
+  Use while (not end of input file). 
+  Process the next line using the function that reads A line AND 
+outputs the line copyText. 
+  Increment the line count. (Increment the variable lineCount.) 
+  Read the next character. 
+  Output the line count AND letter counts. 
+  Use writeTotal.
+  Close files. 
+  
+Testing out "A quote" or "ANOTHER" (ASCII) type thing.
